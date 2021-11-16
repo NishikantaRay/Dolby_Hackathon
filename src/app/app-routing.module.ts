@@ -1,10 +1,22 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AboutComponent } from './home/about/about.component';
+import { ContactComponent } from './home/contact/contact.component';
+import { HeaderComponent } from './home/header/header.component';
+import { HotelComponent } from './home/hotel/hotel.component';
+import { LiveformComponent } from './home/liveform/liveform.component';
 
-const routes: Routes = [];
+const routes: Routes = [
+  { path: 'home', component: HeaderComponent },
+  { path: 'hotel', component: HotelComponent },
+  { path: 'form', component: LiveformComponent },
+  { path: 'contact', component:ContactComponent },
+  { path: 'about', component: AboutComponent }];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule { 
+
+}

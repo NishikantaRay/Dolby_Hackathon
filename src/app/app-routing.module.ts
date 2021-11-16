@@ -5,13 +5,15 @@ import { ContactComponent } from './home/contact/contact.component';
 import { HeaderComponent } from './home/header/header.component';
 import { HotelComponent } from './home/hotel/hotel.component';
 import { LiveformComponent } from './home/liveform/liveform.component';
+import { SurveyComponent } from './home/survey/survey.component';
 
 const routes: Routes = [
   { path: 'home', component: HeaderComponent },
   { path: 'hotel', component: HotelComponent },
   { path: 'form', component: LiveformComponent },
   { path: 'contact', component:ContactComponent },
-  { path: 'about', component: AboutComponent }];
+  { path: 'about', component: AboutComponent },
+  { path: 'feedback', component: SurveyComponent }];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

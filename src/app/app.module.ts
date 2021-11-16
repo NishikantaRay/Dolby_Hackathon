@@ -11,6 +11,7 @@ import { LiveformComponent } from './home/liveform/liveform.component';
 import { ContactComponent } from './home/contact/contact.component';
 import { AboutComponent } from './home/about/about.component';
 import { SurveyComponent } from './home/survey/survey.component';
+import { SawoComponent } from './home/sawo/sawo.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { SurveyComponent } from './home/survey/survey.component';
     LiveformComponent,
     ContactComponent,
     AboutComponent,
-    SurveyComponent
+    SurveyComponent,
+    SawoComponent
   ],
   imports: [
     BrowserModule,

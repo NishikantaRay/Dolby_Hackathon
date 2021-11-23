@@ -1,4 +1,4 @@
-# isSpeaking JavaScript Example
+# meet app
 
 Sample implementation for JavaScript (Web) of the isSpeaking method to poll for active user and update UI accordiingly.
 

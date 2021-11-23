@@ -6,7 +6,10 @@ import {HttpClient, HttpHeaders } from '@angular/common/http';
 })
 export class BookingService {
 
-  constructor(private _http: HttpClient) { }
-
+  constructor(private _http:HttpClient) { }
+  baseUrl:any="";
+  registerfeed(infos:any){
+    return this._http.post<{message:string,infos:any}>(this.baseUrl+'/bookConference',infos);
+  }
   
 }

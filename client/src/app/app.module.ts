@@ -12,7 +12,7 @@ import { ContactComponent } from './home/contact/contact.component';
 import { AboutComponent } from './home/about/about.component';
 import { SurveyComponent } from './home/survey/survey.component';
 import { SawoComponent } from './home/sawo/sawo.component';
-
+import {HttpClientModule} from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,7 +29,8 @@ import { SawoComponent } from './home/sawo/sawo.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

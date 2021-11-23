@@ -2,11 +2,11 @@
 # RoamRooms 🔥🔥
 A live room booking using Dolby Communications API.
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot](https://raw.githubusercontent.com/NishikantaRay/Dolby_Hackathon/main/1.png)
 
-#Team
+# Team
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot](https://raw.githubusercontent.com/NishikantaRay/Dolby_Hackathon/main/2.png)
 
 ## Inspiration 🌟🌟
 When we book a room usually we take the reference of the pictures shown on the website to know how good the room is, and that sometimes doesn't meet our expectations.

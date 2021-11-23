@@ -1,0 +1,116 @@
+.conference-btns .leave {
+  display: none;
+ 
+}
+
+.join{
+  padding-left: 150px;
+}
+.leave{
+  padding-left: 150px;
+}
+.dropdown{
+  padding-left: 40px;
+  
+}
+.camera-off{
+  padding-left: 290px;
+}
+.camera-on {
+  padding-left: 290px;
+}
+#camera-msg{
+  padding-left: 290px;
+  color: black; font-size: 10px; 
+  max-block-size: 100px;
+}
+.conference-btns .camera-on {
+  display: none;
+}
+/* used to hide camera icons before joining */
+#camera-icon-container {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+
+
+.video-container {
+  border-radius: 5px;
+  float: left;
+  width: 100%;
+  padding-bottom: 23%; /* = width for a 1:1 aspect ratio */
+  margin: 0.1%;
+  background-color: rgb(63, 62, 62);
+  height: 320%;
+  position: relative;
+  
+  /* outline: 0px solid black; */
+}
+
+.active {
+  outline: 5px solid rgb(3, 3, 3);
+}
+
+.caption {
+  z-index: 1;
+  position: relative;
+  text-align: right;
+  color: white;
+  padding: 10px;
+}
+
+#control-container {
+  background-color:  #fbf6f9;
+  /* border-top: 2px solid  #ced4da; */
+}
+
+.input-group {
+  top: 20%;
+}
+
+video {
+  object-fit: cover;
+  width: 100% !important;
+  height: 100% !important;
+  z-index: 0;
+  position: absolute;
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg); /* Safari and Chrome */
+  -moz-transform: rotateY(180deg); /* Firefox */
+}
+
+#main-wrapper {
+  padding: 0;
+  background-color:  #eaebf5;
+  /* height: 100vh;
+  width: 100vw; */
+}
+
+#main-view-container {
+  position: relative;
+  background-color:  #eaebf5;
+}
+
+#control-container {
+  /* position: relative; */
+  background-color: #fff;
+  box-shadow:  0 2px 6px 0 rgba(136, 148, 171, 0.2),
+  0 24px 20px -24px rgba(71, 82, 107, 0.1);;
+}
+
+#name-message {
+  color: white;
+}
+
+.copy-join-link {
+  color: white;
+  font-size: small;
+  text-align: center;
+}
+
+html,
+body {
+  height: 100%;
+  background-color: #eaebf5;
+}

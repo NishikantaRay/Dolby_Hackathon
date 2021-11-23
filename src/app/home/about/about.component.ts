@@ -21,7 +21,7 @@ export class AboutComponent implements OnInit {
   {
     dname:"Ayush Mohanty",
     dimg:"https://pbs.twimg.com/profile_images/1411970500562092035/VCUGq_L0_400x400.jpg",
-    dpos:"Web Developer || Crypto Trader",
+    dpos:"Web Developer",
     ddetails:"Cricket Analyst || Web Developer || Crypto Trader"
   },
   {

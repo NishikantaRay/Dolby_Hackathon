@@ -14,8 +14,8 @@ export class LiveformComponent implements OnInit {
     name: ['', Validators.required],
     email: ['', Validators.required],
     phone: ['', Validators.required],
-    fordate: ['', Validators.required],
-    fortime: ['', Validators.required]
+    date: [''],
+    time: ['']
   })
   constructor(private fb: FormBuilder,private _userService:BookingService) { }
   onSubmit(){

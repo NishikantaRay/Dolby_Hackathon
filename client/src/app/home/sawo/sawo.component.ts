@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-
+import Sawo from "sawo";
+import {Router} from '@angular/router';
 @Component({
   selector: 'app-sawo',
   templateUrl: './sawo.component.html',
@@ -7,9 +8,34 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SawoComponent implements OnInit {
 
-  constructor() { }
+  title = 'angular-sawo-chander';
+  Sawo: any;
+  isLoggedIn: boolean = false;
+  userPayload: any = {};
+  constructor(private _router:Router) {}
 
-  ngOnInit(): void {
+  ngOnInit() {
+    const sawoConfig = {
+      // should be same as the id of the container
+      containerID: 'sawo-container',
+      // can be one of 'email' or 'phone_number_sms'
+      identifierType: 'email',
+      // Add the API key
+      apiKey: '73edcd09-c4db-4c26-945d-a237096f6fd4',
+      // Add a callback here to handle the payload sent by sdk
+      onSuccess: (payload: any) => {
+        console.log(`Payload: ${JSON.stringify(payload)}`);
+        this.userPayload = payload;
+        this.isLoggedIn = true;
+        this._router.navigate(['/home']);
+      },
+    };
+    // creating instance
+    this.Sawo = new Sawo(sawoConfig);
+  }
+
+  ngAfterViewInit() {
+    this.Sawo.showForm();
   }
 
 }
